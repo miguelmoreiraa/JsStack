@@ -6,5 +6,9 @@ module.exports = [
     method: "GET",
     handler: UsersController.listUsers,
   },
-  // Add your routes here
+  {
+    endpoint: "/users/:id",
+    method: "GET",
+    handler: UsersController.getUsersById,
+  },
 ];
